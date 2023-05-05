@@ -40,7 +40,7 @@ git clone <url>
 
 git add is a multipurpose command — you use it to begin tracking new files and to stage files.
 With git add --all you can add all files to the staging area.
-To add a specific file you can use git add "filename".
+To add a specific file you can use git add filename.
 
 ### git status
 
