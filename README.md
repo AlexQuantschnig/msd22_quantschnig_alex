@@ -92,12 +92,17 @@ This game is open source. All contributions of any kind are welcome. You can vie
 
 ### Author
 
-My name is Alex Quantschnig, I am a software developer with a passion for mobile and game development.
+My name is Alex Quantschnig, I am a software developer with a passion for mobile and game development. I am currently studying at FH Joanneum in Graz, Austria.
 
 With a strong background in programming and a love for problem-solving, I was inspired to create this game as a way to make learning math more fun and engaging for players of all ages.
 
 Through my work, I hope to inspire more people to embrace math and explore its many possibilities.
 
+- Link to my github profile: [AlexQuantschnig](https://github.com/AlexQuantschnig)
+
+- Link to FH Joanneum: [FH Joanneum](https://www.fh-joanneum.at/)
+
 ## Link to the excercise1 md file
 
 - [Excercise1](exercise1.md)
+- [Excercise2](exercise2.md)
