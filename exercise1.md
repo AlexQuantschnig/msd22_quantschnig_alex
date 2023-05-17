@@ -8,7 +8,7 @@ VS Code comes with a variety of features, including debugging, syntax highlighti
 
 Additionally, it supports extensions, which allow developers to add features and functionalities to the editor, making it a popular choice among developers.
 
-![vscode logo](vscode.png)
+![vscode logo](resources/images/vscode.png)
 
 ## Extensions
 
@@ -24,7 +24,7 @@ Extensions can be installed directly from the VS Code Marketplace, which offers 
 
 To install an extension, follow the steps below and you should be fine.
 
-1. Open Visual Studio Code and click on the 4. Icon ![extension image](extension.png)
+1. Open Visual Studio Code and click on the 4. Icon ![extension image](resources/images/extension.png)
 2. In the searchfield you can search for your desired extension
 3. If you found a suitable extension, click on it and follow the instructions
 4. After the installation close VS Code and open it again to make the changes work or you use the command palette to reload the window

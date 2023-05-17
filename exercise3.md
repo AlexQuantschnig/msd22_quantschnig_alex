@@ -20,7 +20,7 @@ We will also create a small java program which represents a simple calculator.
 ## Create a new maven project
 
 1. Open IntelliJ IDEA and create a new maven project.
-![create maven img](create_maven.png)
+![create maven img](resources/images/create_maven.png)
 
 2. Select the existing git repository as the project location.
 
@@ -32,4 +32,76 @@ We will also create a small java program which represents a simple calculator.
 
 ### Project structure should look like this now
 
-![project structure img](project_structure.png)
+![project structure img](resources/images/project_structure.png)
+
+## Create a simple calculator
+
+1. Create a new java class called Calculator.
+2. Add the following methods
+
+    ```java
+    public double minus(double number1,double number2){
+        return number1 - number2;
+    }
+
+    public double multiply(double number1,double number2){
+        return number1 * number2;
+    }
+
+    public double divide(double number1,double number2){
+        return number1/number2;
+    }
+    public double add(double number1,double number2){
+        return number1 + number2;
+    }
+    ```
+
+3. Create a new java class called Main
+
+    ```java
+   public class Main {
+    public static void main(String[] args) {
+        Calculator calculator = new Calculator();
+        System.out.println("Add: "+calculator.add(5,5));
+        System.out.println("Minus: "+calculator.minus(5,5));
+        System.out.println("Multiply: "+calculator.multiply(5,5));
+        System.out.println("Divide: "+calculator.divide(5,5));
+     }
+    }
+    ```
+  
+4. Run the Main class and check if the output is correct.
+
+## New project structure
+
+After running the Main class the project structure should look like this.
+
+![project structure img](resources/images/ex3_1.png)
+
+After running a Maven project the target folder is created.
+
+This folder contains the compiled classes and the jar file. The jar file is the executable file of the project.
+
+## Add the target folder to the .gitignore file
+
+1. Open the .gitignore file and add the target folder to it.
+
+    ```gitignore
+    target
+    ```
+
+I added the target folder to the gitignore file, because we don't want to push the compiled classes  to the git repository.
+
+## Compile the project
+
+1. Open a terminal and navigate to the project folder.
+
+2. Run the following command to compile the project.
+
+    ```terminal
+    mvn compile
+    ```
+
+3. Your output should look like this.
+
+    ![project structure img](resources/images/ex3_2.png)
