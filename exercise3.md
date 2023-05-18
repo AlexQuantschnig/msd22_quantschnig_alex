@@ -105,3 +105,19 @@ I added the target folder to the gitignore file, because we don't want to push t
 3. Your output should look like this.
 
     ![project structure img](resources/images/ex3_2.png)
+
+## Run the project in the terminal
+
+1. Run the following command to run the project.
+
+    ```terminal
+    alex@Alexs-MBP msd22_Quantschnig_Alex % java -cp /Users/alex/msd22_quantschnig_alex/msd22_Quantschnig_Alex/target/classes at.fhj.msd.Main
+    Add: 10.0
+    Minus: 0.0
+    Multiply: 25.0
+    Divide: 1.0
+    ```
+
+2. It is importent to choose the correct path to the Main class. The path is the path to the target folder.
+
+3. Don't to put the package name in front of the Main class.
