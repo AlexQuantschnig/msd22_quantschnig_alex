@@ -147,3 +147,7 @@ public double factorial(double number1){
 ### Run the tests
 
 ![run test](resources/images/ex4_2.png)
+
+## Run mvn test
+
+![run mvn test](resources/images/ex4_3.png)
