@@ -5,9 +5,11 @@ import org.junit.jupiter.api.Test;
 
 public class CalculatorTest {
 
+    private Calculator calculator;
+
     @BeforeEach
-    void setup() {
-        Calculator calculator = new Calculator();
+    public void setup() {
+         calculator = new Calculator();
     }
     /**
      * Test of add method, of class Calculator.
@@ -18,17 +20,14 @@ public class CalculatorTest {
      */
     @Test
     void testAdd() {
-        Calculator calculator = new Calculator();
         Assertions.assertEquals(8.0, calculator.add(5, 3));
     }
     @Test
     void testAdd2() {
-        Calculator calculator = new Calculator();
         Assertions.assertEquals(24.55, calculator.add(21.55, 3));
     }
     @Test
     void testAdd3() {
-        Calculator calculator = new Calculator();
         Assertions.assertEquals(-8, calculator.add(-5, -3));
     }
 
@@ -41,17 +40,14 @@ public class CalculatorTest {
      */
     @Test
     void testMinus() {
-        Calculator calculator = new Calculator();
         Assertions.assertEquals(2.0, calculator.minus(5, 3));
     }
     @Test
     void testMinus2() {
-        Calculator calculator = new Calculator();
         Assertions.assertEquals(0, calculator.minus(5, 5));
     }
     @Test
     void testMinus3() {
-        Calculator calculator = new Calculator();
         Assertions.assertEquals(-8, calculator.minus(-5, 3));
     }
 
@@ -64,17 +60,14 @@ public class CalculatorTest {
      */
     @Test
     void testMultiply() {
-        Calculator calculator = new Calculator();
         Assertions.assertEquals(15.0, calculator.multiply(5, 3));
     }
     @Test
     void testMultiply2() {
-        Calculator calculator = new Calculator();
         Assertions.assertEquals(0, calculator.multiply(5, 0));
     }
     @Test
     void testMultiply3() {
-        Calculator calculator = new Calculator();
         Assertions.assertEquals(-15.54, calculator.multiply(5.18, -3));
     }
 
@@ -87,17 +80,34 @@ public class CalculatorTest {
      */
     @Test
     void testDivide() {
-        Calculator calculator = new Calculator();
         Assertions.assertEquals(1.667, calculator.divide(5, 3), 0.001);
     }
     @Test
     void testDivide2() {
-        Calculator calculator = new Calculator();
         Assertions.assertEquals(0, calculator.divide(0, 3));
     }
     @Test
     void testDivide3() {
-        Calculator calculator = new Calculator();
         Assertions.assertEquals(-1.667, calculator.divide(5, -3), 0.001);
+    }
+
+    /**
+     * Test of factorial method, of class Calculator.
+     * Here we test the factorial method of the Calculator class with 3 different test cases.
+     * The first test case is a simple factorial of a positive number.
+     * The second test case is a simple factorial of a negative number.
+     * The third test case is a simple factorial of a positive number.
+     */
+    @Test
+    void testFactorial() {
+        Assertions.assertEquals(120, calculator.factorial(5));
+    }
+    @Test
+    void testFactorial2() {
+        Assertions.assertEquals(0, calculator.factorial(-1));
+    }
+    @Test
+    void testFactorial3() {
+        Assertions.assertEquals(24, calculator.factorial(4));
     }
 }
