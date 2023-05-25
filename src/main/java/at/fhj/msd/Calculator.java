@@ -17,7 +17,13 @@ public class Calculator {
         return number1 + number2;
     }
     public double factorial(double number1){
-
-        return 0;
+        if(number1 == 0){
+            return 1;
+        }
+        else if (number1 < 0){
+            return 0;
+        }else {
+            return number1 * factorial(number1-1);
+        }
     }
 }
