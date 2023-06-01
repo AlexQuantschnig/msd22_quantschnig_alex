@@ -3,6 +3,8 @@
 .idea
 target
 .DS_Store
-.log
-unittest
-msd22_Quantschnig_Alex
+*.log
+log4j2.xml
+logs
+
+
