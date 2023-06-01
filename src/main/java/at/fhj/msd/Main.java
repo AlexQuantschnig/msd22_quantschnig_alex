@@ -3,7 +3,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class Main {
-    private static final Logger logger = LogManager.getLogger();
+    public static final Logger logger = LogManager.getLogger();
     public static void main(String[] args) {
         Calculator calculator = new Calculator();
         System.out.println("Add: "+calculator.add(5,5));
