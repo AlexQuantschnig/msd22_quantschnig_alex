@@ -109,3 +109,4 @@ Through my work, I hope to inspire more people to embrace math and explore its m
 - [Excercise3](exercise3.md)
 - [Excercise4](exercise4.md)
 - [Excercise5](exercise5.md)
+- [Excercise6](exercise6.md)
